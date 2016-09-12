@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Request an Appointment</title>
+</head>
+
+<body>
+<font face="Arial, Helvetica" size="2"><b>Request an Appointment</b></font><br>
+<form method="post" action="/cgi-bin/f.pl">
+<input type="hidden" name="recipient" value="info@brottsmiles.com">
+<input type="hidden" name="subject" value="brottsmiles.com Request Form Submission">
+<table border=0 width="90%">
+  <tr valign=top>
+        <td align=right><font size="2" face="Arial, Helvetica">Name:</font></td>
+        <td><input name="name" size=30></td>
+  </tr>
+  <tr valign=top>
+        <td align=right><font size="2" face="Arial, Helvetica">Phone Number:</font></td>
+        <td><input name="phone" size=30></td>
+  </tr>
+  <tr valign=top>
+        <td align=right><font size="2" face="Arial, Helvetica">Email:</font></td>
+        <td><input name="required-email" size=30></td>
+  </tr>
+
+<tr valign=top><td colspan=2><font size="2" face="Arial, Helvetica">Do you prefer email or phone?</font></td></tr>
+   <tr valign=top><td><br></td><td><input type=radio name="prefer" value="Email">Email &nbsp; <input type=radio name="prefer" value="Phone">Phone</td></tr>
+  <TR>
+    <TD colSpan=2><FONT face=Arial size=2>Is there someone we can thank for 
+      referring you to our office?</FONT></TD></TR>
+  <TR>
+    <TD></TD>
+    <TD colSpan=2><TEXTAREA name=referrer rows=4 cols=40></TEXTAREA></TD></TR>
+
+<tr valign=top><td colspan=2><font size="2" face="Arial, Helvetica">Will this be your first visit?</font></td></tr>
+<tr valign=top><td><br></td><td><input type=radio name="visit" value="Yes">Yes &nbsp; <input type=radio name="visit" value="No">No</td></tr>
+
+<tr valign=top>
+                  <td colspan=2><font size="2" face="Arial, Helvetica">Reason 
+                    for Appointment:</font>
+                  <td align=right></td>
+                </tr><tr valign=top><td><br></td><td><input type=checkbox name="reason1" value="Consultation for cosmetic dentistry">Consultation for cosmetic dentistry<br>
+<input type=checkbox name="reason2" value="Routine cleaning and check-up">Routine cleaning and check-up<br>
+<input type=checkbox name="reason3" value="Dental Services">Dental Services<br>
+</td></tr>
+
+<tr valign=top><td colspan=2><font size="2" face="Arial, Helvetica">Please provide some detail as to the nature and desires of your visit:</font></td></tr><tr valign=top><td><br></td><td><TEXTAREA name=nature rows=4 cols=40></TEXTAREA></td></tr>
+
+<tr valign=top><td colspan=2><font size="2" face="Arial, Helvetica">Include at least two possible times that fit within our hours of operation.   What time (or range of time) works best for you?<br>
+        Office Hours: Monday 8-5, Tuesday 8-5, Thursday 8-5, Friday 8-4 </font></td>
+    </tr><tr valign=top><td><br></td><td><TEXTAREA name=times rows=4 cols=40></TEXTAREA></td></tr>
+  
+  <tr valign=top>
+         <td align=middle colspan=2>
+         <p><br><p>
+         <input type="submit" value="Request Appointment">
+         <input type="hidden" name="success" value="success.htm">
+         <input type="reset" value="Reset"></p>
+  </td></tr></table></form>
+
+</body>
+</html>
